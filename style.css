@@ -3,17 +3,45 @@ body {
   color: royalblue;
   text-align: center;
   background-color: bisque;
-  font-family: "Comic Sans MS", "Comic Sans", cursive;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 18px;
+  margin: 0;
 }
 
 /* Typography */
 
 /* Links & Accents */
-
+.accent{
+    color: rgb(35, 116, 30);
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: 800;
+    font-size: 1.3em;
+    font-style: italic;
+  }
 /* Images */
 
 /* Hero Section */
-
+#hero-container{
+  img{
+    width: 60%;
+  }
+}
+header {
+  background-color: rgb(156, 168, 113);
+  border-bottom: dashed rgb(31, 65, 29);
+  padding: 10px;
+  color: rgb(31, 65, 29);
+  h1{
+    font-size: 3em;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-decoration-line: underline;
+    text-underline-offset: 2;
+  }
+  p{
+    font-style: italic;
+    font-weight: 500;
+  }
+}
 /* Main Content */
 
 /* About Section */
