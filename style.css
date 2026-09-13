@@ -2,7 +2,7 @@
 body {
   color: royalblue;
   text-align: center;
-  background-color: bisque;
+  background-color: rgb(227, 207, 185);
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   margin: 0;
@@ -12,7 +12,7 @@ body {
 
 /* Links & Accents */
 .accent {
-  color: rgb(35, 116, 30);
+  color: rgb(169, 47, 116);
   font-family: Georgia, "Times New Roman", Times, serif;
   font-weight: 800;
   font-size: 1.3em;
@@ -24,24 +24,21 @@ ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-}
-
-ul li {
-  float: left;
+  background-color: rgb(31, 65, 29);
+  display: flex;
+  justify-content: center;
 }
 
 ul li a {
   display: block;
   color: white;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-size: 1.3em;
 }
 
 ul li a:hover {
-  background-color: #111111;
+  background-color: rgb(12, 36, 11);
 }
 
 /* Images */
@@ -53,10 +50,10 @@ ul li a:hover {
   }
 }
 header {
-  background-color: rgb(156, 168, 113);
+  background-color: rgb(227, 207, 185);
   border-bottom: dashed rgb(31, 65, 29);
   padding: 10px;
-  color: rgb(31, 65, 29);
+  color: black;
   h1 {
     font-size: 3em;
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -65,7 +62,7 @@ header {
   }
   p {
     font-style: italic;
-    font-weight: 500;
+    font-weight: 600;
   }
 }
 
