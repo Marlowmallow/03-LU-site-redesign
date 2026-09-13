@@ -5,8 +5,8 @@ body {
   background-color: rgb(227, 207, 185);
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
-  margin: 0;
   overflow-x: hidden;
+  margin: 0;
 }
 
 /* Typography */
@@ -22,6 +22,7 @@ body {
 
 /* Navigation */
 ul {
+  margin: 0;
   list-style-type: none;
   background-color: rgb(31, 65, 29);
   display: flex;
@@ -108,9 +109,51 @@ header {
 
 /* Specials Section */
 #specials{
-  display: flexbox;
-  
+  padding-bottom: 0;
 }
+.specials-list{
+  margin-left: 13%;
+  margin-right: 13%;
+  padding: 2%;
+  align-items: flex-start;
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  height: 100%;
+  width: auto;
+  gap: 30px;
+  overflow-y: hidden;
+}
+.special-offer{
+  background-color: rgb(207, 204, 199);
+  border: solid 15px rgb(207, 204, 199);
+  padding-top: 20px;
+  box-shadow: 3px 10px 12px;
+  img{
+      max-width: 100%;
+    }
+  p.price-now{
+    color: rgb(172, 38, 38);
+    font-weight: 600;
+  }
+  p.price-was{
+    text-decoration: line-through;
+    color: rgb(71, 70, 70);
+  }
+}
+
+@media (max-width: 500px) {
+  .specials-list{
+    flex-direction: column;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+    margin-left: 2%;
+    margin-right: 2%;
+    height: 10%;
+    width: auto;
+  }
+}
+
 /* Visit Us Section */
 h2{
   text-decoration-line: underline;
@@ -148,6 +191,7 @@ iframe {
 
 /* Footer */
 footer {
+  margin: 0;
   margin-top: 48px;
   padding-bottom: 10px;
   text-align: center;
