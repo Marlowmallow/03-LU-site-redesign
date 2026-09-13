@@ -111,6 +111,28 @@ header {
 #specials{
   padding-bottom: 0;
 }
+
+#seasonal-pick{
+  .season-offer{
+    background-color: rgb(207, 204, 199);
+    border: solid 15px rgb(207, 204, 199);
+    padding-top: 20px;
+    box-shadow: 3px 10px 12px;
+    margin: 10%;
+    img{
+      max-width: 100%;
+    }
+    p.price-now{
+    color: rgb(172, 38, 38);
+    font-weight: 600;
+    font-size: 1.5em;
+  }
+  p.price-was{
+    text-decoration: line-through;
+    color: rgb(71, 70, 70);
+  }
+  }
+}
 .specials-list{
   margin-left: 13%;
   margin-right: 13%;
