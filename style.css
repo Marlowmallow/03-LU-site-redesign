@@ -6,6 +6,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* Typography */
@@ -22,11 +23,11 @@ body {
 /* Navigation */
 ul {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
   background-color: rgb(31, 65, 29);
   display: flex;
   justify-content: center;
+  padding-left: 5%;
+  padding-right: 6%;
 }
 
 ul li a {
@@ -41,6 +42,18 @@ ul li a:hover {
   background-color: rgb(12, 36, 11);
 }
 
+@media (max-width: 425px) {
+  ul {
+    display: block;
+    justify-content: center;
+  }
+  ul li a {
+    float: center;
+  }
+  header {
+    text-align: center;
+  }
+}
 /* Images */
 
 /* Hero Section */
@@ -82,4 +95,19 @@ iframe {
 /* Footer */
 footer {
   margin-top: 48px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(31, 65, 29);
+  color: white;
+  justify-content: end;
+  width: 100%;
+  p {
+    display: inline-block;
+  }
+}
+@media (max-width: 425px) {
+  p {
+    display: block;
+  }
 }
