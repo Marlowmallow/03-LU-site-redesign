@@ -1,6 +1,6 @@
 /* Base Styles */
 body {
-  color: royalblue;
+  color: black;
   text-align: center;
   background-color: rgb(227, 207, 185);
   font-family: Georgia, "Times New Roman", Times, serif;
@@ -82,22 +82,74 @@ header {
 /* Main Content */
 
 /* About Section */
+#about-us {
+  display: flex;
+  img{
+    width: 60%;
+    height: auto;
+  }
+  p{
+    display: inline-block;
+    text-align: left;
+    justify-content: center;
+    padding-right: 5%;
+    padding-left: 5%;
+    line-height: 1.8;
+  }
+}
+@media (max-width: 768px){
+  #about-us{
+    display: block;
+    img{
+      width: 100%;
+    }
+  }
+}
 
 /* Specials Section */
-
+#specials{
+  display: flexbox;
+  
+}
 /* Visit Us Section */
+h2{
+  text-decoration-line: underline;
+  font-style: italic;
+}
+p.say-hi{
+  font-style: italic;
+  font-weight: 700;
+}
+p, address{
+  font-weight: 500;
+}
+
+address{
+  text-decoration: underline;
+  text-underline-offset: 2;
+}
 
 /*Navigation */
 
 iframe {
-  width: 100%;
+  width: 80%;
   height: 350px;
+}
+@media(max-width: 768px){
+  iframe{
+    width: 90%;
+  }
+}
+@media(max-width: 500px){
+  iframe{
+    width: 100%;
+  }
 }
 
 /* Footer */
 footer {
   margin-top: 48px;
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   text-align: center;
   padding: 3px;
   background-color: rgb(31, 65, 29);
