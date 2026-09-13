@@ -2,46 +2,83 @@
 body {
   color: royalblue;
   text-align: center;
-  background-color: bisque;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(227, 207, 185);
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   margin: 0;
+  overflow-x: hidden;
 }
 
 /* Typography */
 
 /* Links & Accents */
-.accent{
-    color: rgb(35, 116, 30);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 800;
-    font-size: 1.3em;
-    font-style: italic;
+.accent {
+  color: rgb(169, 47, 116);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 800;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+/* Navigation */
+ul {
+  list-style-type: none;
+  background-color: rgb(31, 65, 29);
+  display: flex;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 6%;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 1.3em;
+}
+
+ul li a:hover {
+  background-color: rgb(12, 36, 11);
+}
+
+@media (max-width: 425px) {
+  ul {
+    display: block;
+    justify-content: center;
   }
+  ul li a {
+    float: center;
+  }
+  header {
+    text-align: center;
+  }
+}
 /* Images */
 
 /* Hero Section */
-#hero-container{
-  img{
+#hero-container {
+  img {
     width: 60%;
   }
 }
 header {
-  background-color: rgb(156, 168, 113);
+  background-color: rgb(227, 207, 185);
   border-bottom: dashed rgb(31, 65, 29);
   padding: 10px;
-  color: rgb(31, 65, 29);
-  h1{
+  color: black;
+  h1 {
     font-size: 3em;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     text-decoration-line: underline;
     text-underline-offset: 2;
   }
-  p{
+  p {
     font-style: italic;
-    font-weight: 500;
+    font-weight: 600;
   }
 }
+
 /* Main Content */
 
 /* About Section */
@@ -60,4 +97,19 @@ iframe {
 /* Footer */
 footer {
   margin-top: 48px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 3px;
+  background-color: rgb(31, 65, 29);
+  color: white;
+  justify-content: end;
+  width: 100%;
+  p {
+    display: inline-block;
+  }
+}
+@media (max-width: 425px) {
+  p {
+    display: block;
+  }
 }
