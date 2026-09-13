@@ -3,7 +3,7 @@ body {
   color: royalblue;
   text-align: center;
   background-color: bisque;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 18px;
   margin: 0;
 }
@@ -11,18 +11,44 @@ body {
 /* Typography */
 
 /* Links & Accents */
-.accent{
-    color: rgb(35, 116, 30);
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-weight: 800;
-    font-size: 1.3em;
-    font-style: italic;
-  }
+.accent {
+  color: rgb(35, 116, 30);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-weight: 800;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+/* Navigation */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+ul li {
+  float: left;
+}
+
+ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #111111;
+}
+
 /* Images */
 
 /* Hero Section */
-#hero-container{
-  img{
+#hero-container {
+  img {
     width: 60%;
   }
 }
@@ -31,17 +57,18 @@ header {
   border-bottom: dashed rgb(31, 65, 29);
   padding: 10px;
   color: rgb(31, 65, 29);
-  h1{
+  h1 {
     font-size: 3em;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-family: Georgia, "Times New Roman", Times, serif;
     text-decoration-line: underline;
     text-underline-offset: 2;
   }
-  p{
+  p {
     font-style: italic;
     font-weight: 500;
   }
 }
+
 /* Main Content */
 
 /* About Section */
